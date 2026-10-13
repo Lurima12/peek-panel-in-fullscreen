@@ -1,6 +1,6 @@
 {
-  "uuid": "fullscreen-panel-peek@lurim412",
-  "name": "Fullscreen Panel Peek",
+  "uuid": "peek-panel-in-fullscreen@lurim412",
+  "name": "Peek Panel in Fullscreen",
   "description": "Hides the top panel while a window is fullscreen and lets you peek at it by touching the screen edge (or with a shortcut). Detects whether the panel is at the top or bottom of the screen and animates the whole panel box, so it stays compatible with Blur My Shell.",
   "shell-version": ["46", "47", "48", "49", "50"],
   "url": "https://github.com/example/fullscreen-panel-peek",
