@@ -34,7 +34,7 @@ fullscreen-panel-peek@lurim412/
 ## Installation
 
 ```sh
-git clone peek-panel-in-fullscreen peek-panel-in-fullscreen@lurim412
+git clone https://github.com/Lurima12/peek-panel-in-fullscreen.git peek-panel-in-fullscreen@lurim412
 cp -r peek-panel-in-fullscreen@lurim412 ~/.local/share/gnome-shell/extensions/
 glib-compile-schemas ~/.local/share/gnome-shell/extensions/fullscreen-panel-peek@lurim412/schemas
 ```
