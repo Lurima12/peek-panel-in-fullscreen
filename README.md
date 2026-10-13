@@ -31,12 +31,6 @@ fullscreen-panel-peek@lurim412/
     └── org.gnome.shell.extensions.fullscreen-panel-peek.gschema.xml
 ```
 
-## Before you ship
-
-- Replace the `uuid` domain (`example.org`) and `url` in `metadata.json` with your own.
-  If you rename the uuid, rename the folder to match.
-- Add your GNOME Shell version to `shell-version` after testing on it.
-
 ## Installation
 
 ```sh
