@@ -1,4 +1,4 @@
-# Fullscreen Panel Peek
+# Peek Panel in Fullscreen
 
 Hides the GNOME Shell panel while a window is fullscreen on the panel's monitor,
 and lets you peek at it again:
