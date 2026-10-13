@@ -37,11 +37,11 @@ fullscreen-panel-peek@lurim412/
   If you rename the uuid, rename the folder to match.
 - Add your GNOME Shell version to `shell-version` after testing on it.
 
-## Install for development
+## Installation
 
 ```sh
-mkdir -p ~/.local/share/gnome-shell/extensions
-cp -r fullscreen-panel-peek@lurim412 ~/.local/share/gnome-shell/extensions/
+git clone peek-panel-in-fullscreen peek-panel-in-fullscreen@lurim412
+cp -r peek-panel-in-fullscreen@lurim412 ~/.local/share/gnome-shell/extensions/
 glib-compile-schemas ~/.local/share/gnome-shell/extensions/fullscreen-panel-peek@lurim412/schemas
 ```
 
