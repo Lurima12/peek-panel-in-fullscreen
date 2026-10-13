@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="fullscreen-panel-peek">
+  <schema id="org.gnome.shell.extensions.fullscreen-panel-peek"
+          path="/org/gnome/shell/extensions/fullscreen-panel-peek/">
+
+    <key name="position-mode" type="s">
+      <choices>
+        <choice value="auto"/>
+        <choice value="top"/>
+        <choice value="bottom"/>
+      </choices>
+      <default>'auto'</default>
+      <summary>Panel position</summary>
+      <description>Where the panel is located. "auto" detects it from the panel's actual geometry (top or bottom of its monitor); "top" and "bottom" force an edge.</description>
+    </key>
+
+    <key name="trigger-size" type="i">
+      <range min="1" max="16"/>
+      <default>1</default>
+      <summary>Trigger thickness</summary>
+      <description>Thickness in pixels of the invisible strip at the screen edge that reveals the panel.</description>
+    </key>
+
+    <key name="show-delay" type="i">
+      <range min="0" max="2000"/>
+      <default>150</default>
+      <summary>Reveal delay</summary>
+      <description>Milliseconds the pointer must rest on the edge before the panel appears.</description>
+    </key>
+
+    <key name="hide-delay" type="i">
+      <range min="0" max="5000"/>
+      <default>600</default>
+      <summary>Hide delay</summary>
+      <description>Milliseconds after the pointer leaves the panel before it hides again.</description>
+    </key>
+
+    <key name="animation-time" type="i">
+      <range min="0" max="1000"/>
+      <default>200</default>
+      <summary>Animation duration</summary>
+      <description>Duration in milliseconds of the slide animation. 0 disables it.</description>
+    </key>
+
+    <key name="toggle-peek" type="as">
+      <default><![CDATA[['<Super><Shift>p']]]></default>
+      <summary>Toggle peek shortcut</summary>
+      <description>Pins the panel open while in fullscreen; press again to hide it.</description>
+    </key>
+
+    <key name="exclude-gamemode" type="b">
+      <default>true</default>
+      <summary>Disable while GameMode is active</summary>
+      <description>While Feral GameMode has at least one registered game, the panel behaves like stock GNOME in fullscreen: hidden, with no peeking.</description>
+    </key>
+
+    <key name="exclude-apps" type="as">
+      <default>['steam_app_*']</default>
+      <summary>Excluded apps</summary>
+      <description>Window classes or application IDs (case-insensitive, '*' wildcard) for which a fullscreen window behaves like stock GNOME: panel hidden, no peeking.</description>
+    </key>
+
+    <key name="debug" type="b">
+      <default>false</default>
+      <summary>Debug logging</summary>
+      <description>Log peek state changes to the journal.</description>
+    </key>
+
+  </schema>
+</schemalist>
